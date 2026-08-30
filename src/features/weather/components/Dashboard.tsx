@@ -95,6 +95,7 @@ export default function Dashboard() {
                 <th className="px-6 py-3">Humidity</th>
                 <th className="px-6 py-3">Wind</th>
                 <th className="px-6 py-3">Comfort</th>
+                <th className="px-6 py-3">Visibility</th>
               </tr>
             </thead>
 
@@ -123,6 +124,7 @@ export default function Dashboard() {
                     <td className="px-6 py-4">{Math.round(city.temperature)}°C</td>
                     <td className="px-6 py-4">{city.humidity}%</td>
                     <td className="px-6 py-4">{city.windSpeed} m/s</td>
+                    <td className="px-6 py-4">{city.visibility / 1000} km</td>
                     <td className="px-6 py-4">
                       <span className={`inline-block rounded-md px-3 py-1 font-medium ${scoreTone(city.score)}`}>
                         {city.score}/100
@@ -170,6 +172,22 @@ export default function Dashboard() {
                     Wind: <strong className="text-gray-700">{city.windSpeed} m/s</strong>
                   </span>
                 </div>
+                <div className="mt-4 flex gap-6 text-xs text-gray-500">
+                  <span>
+                    Humidity: <strong className="text-gray-700">{city.humidity}%</strong>
+                  </span>
+
+                  <span>
+                    Wind: <strong className="text-gray-700">{city.windSpeed} m/s</strong>
+                  </span>
+                </div>
+
+                <div className="mt-4 flex gap-6 text-xs text-gray-500">
+                  <span>
+                    Visibility: <strong className="text-gray-700">{city.visibility / 1000} km</strong>
+                  </span>
+                </div>
+
               </article>
             ))
           )}
