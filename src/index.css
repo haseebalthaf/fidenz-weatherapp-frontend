@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root { font-family: 'Manrope', sans-serif; color: #20302d; background: #f4f4ef; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+body { margin: 0; min-width: 320px; }
+
+.dark-mode {
+	background: #111827;
+	color: #eff6ff;
+}
+
+.dark-mode .bg-gray-50,
+.dark-mode .hover\:bg-gray-50:hover {
+	background-color: #1e293b;
+}
+
+.dark-mode .bg-white {
+	background-color: #1e293b;
+}
+
+.dark-mode .border-gray-200,
+.dark-mode .border-gray-300,
+.dark-mode .divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
+	border-color: #334155;
+}
+
+.dark-mode tbody.divide-y > tr:first-child {
+	border-bottom-color: #263449 !important;
+}
+
+.dark-mode .text-gray-900,
+.dark-mode .text-gray-700 {
+	color: #eff6ff;
+}
+
+.dark-mode .text-gray-600,
+.dark-mode .text-gray-500 {
+	color: #94a3b8;
+}
+
+.dark-mode .text-gray-500 {
+	color: #94a3b8;
+}
+
+.dark-mode .text-gray-700 {
+	color: #dbeafe;
+}
+
+.dark-mode .hover\:bg-gray-800:hover {
+	background-color: #475569;
+}
+
+.dark-mode .bg-gray-900 {
+	background-color: #eff6ff;
+	color: #111827;
+}
+
+.dark-mode .bg-green-100 {
+	background-color: #1c4937;
+	color: #9ae6bf;
+}
+
+.dark-mode .bg-yellow-100 {
+	background-color: #50451c;
+	color: #f4dc7a;
+}
+
+.dark-mode .bg-orange-100 {
+	background-color: #51351e;
+	color: #f6b477;
+}
